@@ -1,0 +1,31 @@
+<div class="row">
+ 		<div class="small-12 medium-12 large-12 columns text-center"><h1>IMDB Top 250 Movie Directory</h1></div>
+ 		<div class="small-12 medium-12 large-12 columns text-center"><a href="#/list">Search</a>&nbsp;&nbsp;&nbsp;<a href="#/gallery">Gallery</a>
+		</div>
+</div>
+
+<div class="row">
+	<ul class="small-block-grid-6 medium-block-grid-12 large-block-grid-12">
+		<li class="genre" ng-click="genre='All'" ng-class="{active:genre=='All'}">All</li>
+		<li class="genre" ng-click="genre='Action'" ng-class="{active:genre=='Action'}">Action</li>
+		<li class="genre" ng-click="genre='Adventure'" ng-class="{active:genre=='Adventure'}">Adventure</li>
+		<li class="genre" ng-click="genre='Crime'" ng-class="{active:genre=='Crime'}">Crime</li>
+		<li class="genre" ng-click="genre='Comedy'" ng-class="{active:genre=='Comedy'}">Comedy</li>
+		<li class="genre" ng-click="genre='Drama'" ng-class="{active:genre=='Drama'}">Drama</li>
+		<li class="genre" ng-click="genre='Musical'" ng-class="{active:genre=='Musical'}">Musical</li>
+		<li class="genre" ng-click="genre='Mystery'" ng-class="{active:genre=='Mystery'}">Mystery</li>
+		<li class="genre" ng-click="genre='Romance'" ng-class="{active:genre=='Romance'}">Romance</li>
+		<li class="genre" ng-click="genre='Sci-Fi'" ng-class="{active:genre=='Sci-Fi'}">Sci-Fi</li>
+		<li class="genre" ng-click="genre='Thriller'" ng-class="{active:genre=='Thriller'}">Thriller</li>
+		<li class="genre" ng-click="genre='Western'" ng-class="{active:genre=='Western'}">Western</li>
+	</ul>
+</div>
+
+
+<div class="row ggg">
+<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-6">
+  <li ng-repeat="movie in selectMovies(genre) | orderBy:orderProp"> 
+  	<a href="#/details/{{movie.rank}}"><img class="galleryAnimate" ng-src="data/images/{{movie.imdbID+'.jpg'}}"></a>
+  </li>
+</ul>
+</div>

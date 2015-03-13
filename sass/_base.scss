@@ -1,14 +1,131 @@
 @import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
-@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css');
 
-
-h1 {
-  font-size: 2.2rem;
-  color: lighten($orange, 25);
+body{
+	background-color: #B8E68A !important;
+	font-family: $font-primary;
 }
 
-.test {
-  font-size: 1.2rem;
-  color: $blue;
+/*#nav-bar, ul, li{
+  transition: all 0.5s;
+  -moz-transition: all 0.5s; /* Firefox 4 */
+/*  -webkit-transition: all 0.5s; /* Safari and Chrome */
+/*  -o-transition: all 0.5s; /* Opera */
+/*}*/
+
+#nav-bar{
+    height: 80px;
+    background-color: #CC9900;
+    z-index:10;
 }
 
+#pingyao{
+	font-family: $font-secondary;
+	font-size: 36px;
+	color: #993333;
+}
+
+#header{
+	margin-top: 20px;
+	font-size: 2em;
+	font-family: $font-secondary;
+	color: #800000;
+}
+
+.title{
+	color: #FFFFFF !important;
+	font-size: 24px;
+	vertical-align: middle;
+}
+
+/*#background-image{
+	width: 100% !important;
+	position: fixed;
+	background: url("../img/pingyao.jpg");
+	background-size: cover;
+  background-position: center center;
+	height: 500px;
+	top: 80px;
+}*/
+
+.kaitou{
+	font-size: 3em;
+	color: #FFFFFF;
+}
+
+#ktktkt{
+	margin-top: 20px;
+}
+
+.firstImg{
+	margin-top: 10px;
+	 display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   height: 500px;
+}
+
+.intro{
+	margin-top: 10px;
+	font-size: 1.8em;
+	font-family: $font-secondary;
+	/*background-color: #94FFB8;*/
+	/*height: 200px;*/
+	/*z-index: 3;*/
+}
+
+.pp{
+	margin-top: 10px;
+	font-family: $font-secondary;
+	font-size: 2em;
+	color: #CC6699;
+}
+
+.clickable:hover {
+	cursor: pointer;
+	height: 150px;
+}
+
+.clickable{
+	margin-top: 10px;
+	height: 120px;
+	width: 100%;
+	-webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  transition: height 1s;
+}
+
+.photos{
+	
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 550px;
+}
+
+
+
+#footer{
+	clear: both;
+	width: 100%;
+	background-color: #CC9900;
+	/*font:  italic;*/
+	font-size: 2em;
+	color: #FFFFFF;
+	text-align: center;
+	z-index: 10;
+	height: 80px;
+	/*bottom: 0;*/
+	position: relative;
+}
+
+/*#video {
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	width="1000";
+	height="400";
+}*/

@@ -1,0 +1,185 @@
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css');
+
+body {
+	font-family: $font-primary;
+	color: $color-text-dark;
+	background-color: $light-background;
+}
+
+.header{
+	margin-left: auto;
+	margin-right: auto;
+	float: none !important;
+}
+
+.clickable:hover {
+	cursor: pointer;
+}
+
+.genre{
+	background-color: #CCFFFF;
+	text-align: center;
+	color: #FF9933;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.genre.active{
+	background-color: #6666FF;
+}
+
+li.genre{
+	vertical-align: middle;
+	line-height: 30px;
+	font: $font-secondary;
+}
+
+.galleryAnimate{
+	width: 100%;
+	-webkit-transition: width 3s; /* For Safari 3.1 to 6.0 */
+  transition: width 3s;
+}
+
+.galleryAnimate:hover{
+	width: 90%;
+}
+
+.ggg{
+	margin-top: 20px;
+}
+
+.genre:hover{
+	cursor: pointer;
+}
+
+.search{
+	width: 400px;
+	background-color:#00CCFF;
+}
+
+.searchResult{
+	width: 400px;
+}
+
+.searchInput{
+  margin-top: 20px;
+  height: 40px;
+  font-size: 30px;
+  font-family: $font-secondary;
+  color: #00CF84;
+  width: 70%;
+}
+
+#sort{
+	float: left;
+	margin-left: 15%;
+	font-family: $font-secondary;
+	margin-bottom: 2px;
+}
+
+.select{
+  font-family: $font-secondary;
+  float: left;
+  margin-top: 2px;
+  margin-left: 15%;
+  width: 70%;
+}
+
+form#myForm{
+	float: left;
+	padding-left: 15%;
+}
+.inputRadio{
+	width: 20px;
+}
+
+.movieList{
+	background-color: #FFCC99;
+	height: 180px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	border-bottom: 1px;
+	border-bottom-style: dotted;
+	-webkit-transition: height 4s width 3s; /* For Safari 3.1 to 6.0 */
+  transition: height 4s width 3s;
+}
+
+.movieList:hover{
+	height: 200px;
+	width: 650px;
+}
+
+.info{
+	margin: 20px;
+	font-family: $font-secondary;
+	float: left;
+}
+
+.paragraph{
+	margin: 10px;
+	float: left;
+}
+
+.p2{
+	color: red;
+}
+
+.thumb{
+	float: left;
+	margin: 20px;
+	height: 150px;
+	width: 100px;	
+}
+
+.arrow{
+	margin-top: 20px;
+	background-color:#FFCC99;
+	height: 20px;
+}
+
+.detail{
+	/*margin-top: 20px;*/
+	background-color:#FFCC99;
+	height: 500px;
+	/*overflow: hidden;*/
+}
+
+#leftGo{
+	float: left;
+	margin-left: 20px;
+}
+
+#rightGo{
+	float: right;
+	margin-right: 20px;
+}
+
+.detailImg{
+	width: 100%;
+	margin-top: 30px;
+	margin-left: 60px;
+	/*margin-right: auto;*/
+	/*width: 200px;*/
+}
+
+.Idontkonw{
+	/*width: 100%;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.detailInfo{
+	font-family: $font-secondary;
+	/*margin-left: 20px;*/
+	padding-top: 40px;
+	margin-top: 0px;
+	text-align: left;
+	padding-right: 5px;
+	background-color:#FFCC99;
+	padding-bottom: 10px;
+}
